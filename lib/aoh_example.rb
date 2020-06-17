@@ -9,10 +9,12 @@ BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 def assembled_aoh 
   a_o_h = [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
   count = 0
-  new_a_o_h 
+  new_a_o_h = []
     while count < a_o_h do 
-      
-    end 
+      new_a_o_h << a_o_h[count]
+      count += 1
+    end
+  new_a_o_h
 end
 
 def literal_aoh
