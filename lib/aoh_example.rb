@@ -18,8 +18,14 @@ def assembled_aoh
 end
 
 def literal_aoh
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
+  a_o_h = [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+  count = 0
+  new_a_o_h = []
+    while count < a_o_h.length do 
+      new_a_o_h << a_o_h[count]
+      count += 1
+    end
+  new_a_o_h
 end
 
 def aoh_lookup(aoh, row, key)
